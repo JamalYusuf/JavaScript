@@ -87,7 +87,7 @@ Questions: are objects Javascripts class?
 */
 
 
-//Object of me
+//Object of myself
 
 var Jamal  = {
 
