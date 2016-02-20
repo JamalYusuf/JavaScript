@@ -9,17 +9,28 @@ tag.addEventListner("event", function);
 */
 
 var offBtn = document.querySelector(".offBtn");
-var onBtn = document.querySelector(".onBtn");
 var body = document.querySelector("body");
+var isOn = true;
 
 offBtn.addEventListener("click",lightsOff);
-onBtn.addEventListener("click", lightsOn);
 
 function lightsOff(){
+
+
+	if(isOn)
+	{
 	body.classList.toggle("lightsOff");
+	offBtn.classList.toggle("onBtn");
+	offBtn.textContent = "Turn Lights On";
+	isOn = !isOn;
+	}
+	else{
+	body.classList.toggle("lightsOff");
+		offBtn.classList.toggle("onBtn");
+	offBtn.textContent = "Turn Lights Off";
+	isOn = !isOn;
+
+	}
 
 }
 
-function lightsOn(){
-	body.classList.toggle("lightsOn")
-}
