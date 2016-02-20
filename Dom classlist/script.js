@@ -10,15 +10,16 @@ variable.classlist.toggle();
 
 var content = document.getElementById("content");
 
+
 function toggleClass(){
 
 	content.classList.toggle("highlight");
 }
 
 function makeInvisible(){
-	content.classList.add("invisible");
+	content.classList.toggle("invisible");
 }
 
 function makeVisible(){
-	content.classList.add("visible");
+	content.classList.toggle("visible");
 }
