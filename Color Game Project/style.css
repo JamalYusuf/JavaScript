@@ -41,7 +41,8 @@ width: 100%;
 	margin-right:30%;
 	margin-left:30%;
 	margin-top: -3%;
-	width: 100%;
+	/*width: 100%;*/
+	width:400px; /*for the cheat*/
 }
 
 #header-text-bottom{
